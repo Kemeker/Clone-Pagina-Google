@@ -1,29 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react';
 import logo from '../src/assets/logo.png'
 
-import './App.css';
-
-
-function App() {
-  const = EnviarPesquisa = () => {
-    alert('Servidores OF-LINE neste momento :( ')
+function App(){
+  const [query, setQuery] = useState('')
+ 
+  const handleSearch = () => {
+    // implementar a logica 
+    alert('Voce esta pesquisando:  ' + query)
   }
-  return (
+  return(
     <div className="container mt-4">
-      <div className="row justify-content-center">
-        <div className="col-md-6">
-          <div className="input-group">
-            <img src={logo} alt="logo"/>
-            <input type="text" className="form-control" placeholder="Pesquisar..." aria-label="Pesquisar" aria-describedby="basic-addon2" />
-            <button type="button" onClick={EnviarPesquisa}>Pesquisar</button>
-          </div>
+    <div className="row justify-content-center">
+      <div className="col-md-6">
+        <div className="input-group">
+          
+          <img src="{logo}" alt="logo" />
+          <input
+            type="text"
+            placeholder="Digite sua pesquisa...."
+            onChange={(e) => setQuery(e.target.value)}
+            className="form-control"
+            aria-label="Pesquisar" 
+            aria-describedby="basic-addon2"
+          />
+          <button onClick={handleSearch}>Pesquisa</button>
+ 
+          
         </div>
-
       </div>
 
     </div>
-    
-  );
-}
 
-export default App;
+  </div>
+  )
+}
+export default App
+
+// a funçao do botao handleSearch esta diretamente em App.js para teste
+// porem vai ser testada como um componente e chamada na pagina principal
