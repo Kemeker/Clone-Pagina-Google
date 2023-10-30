@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../src/assets/logo'
 
-
 function SearchBar () {
   const [query, setQuery] = useState('Digite algo no campo')
 
@@ -38,4 +37,4 @@ function SearchBar () {
 
 export default SearchBar
 
-// Input com botao implementado atraves de componente
+// em teste barra de pesquisas separada do App.js como um componente

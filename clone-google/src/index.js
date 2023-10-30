@@ -7,11 +7,6 @@ import App from './App'
 
 const root = reactDOM.createRoot(document.getElementById('root'))
 root.render(
- 
-  <>
-  <App/>,
-  <SearchBar/>
-  </>
-
+ <App/>
 )
 
