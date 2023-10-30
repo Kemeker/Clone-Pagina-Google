@@ -12,7 +12,7 @@ function App() {
           <div className="input-group">
             <img src={logo} alt="logo"/>
             <input type="text" className="form-control" placeholder="Pesquisar..." aria-label="Pesquisar" aria-describedby="basic-addon2" />
-            
+            <button>Enviar</button>
           </div>
         </div>
 
