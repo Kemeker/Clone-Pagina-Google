@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import SearchBar from '../src/components/SearchBar'
+import './App.css'
 
 function App(){
   const [query, setQuery] = useState('Digite algo no campo de pesquisa')

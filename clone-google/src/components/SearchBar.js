@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import logo from '../src/assets/logo'
+import logo from '../assets/logo.png'
+import './SearchBar.css'
 
 function SearchBar () {
   const [query, setQuery] = useState('Digite algo no campo')
@@ -14,12 +15,12 @@ function SearchBar () {
         <div className="col-md-6">
           <div className="input-group">
           
-              <img src="{logo}" alt="logo" />
+              <img src="{logo}" alt="logo"/>
               <input
                 type="text"
+                className="form-control custom-rounded-input"
                 placeholder="Digite sua pesquisa...."
                 onChange={(e) => setQuery(e.target.value)}
-                className="form-control"
                 aria-label="Pesquisar" 
                 aria-describedby="basic-addon2"
               />
