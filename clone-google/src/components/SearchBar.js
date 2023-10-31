@@ -10,32 +10,34 @@ function SearchBar () {
     alert('Voce esta procurando: ' + query)
   }
   return(
-    <div className="container mt-4">
-      <div className="row justify-content-center">
+   
+    <div className="container">
+    <div className="container mt-4 h-100">
+      <div className="row h-100 justify-content-center align-items-center">
         <div className="col-md-6">
           <div className="input-group">
-          
-              <img src="{logo}" alt="logo"/>
-              <input
-                type="text"
-                className="form-control custom-rounded-input"
-                placeholder="Digite sua pesquisa...."
-                onChange={(e) => setQuery(e.target.value)}
-                aria-label="Pesquisar" 
-                aria-describedby="basic-addon2"
-              />
-            <button onClick={handleSearch}>Pesquisa</button>
- 
-          
+            <input
+              type="text"
+              placeholder="Digite sua pesquisa...."
+              onChange={(e) => setQuery(e.target.value)}
+              className="form-control"
+            aria-label="Pesquisar"
+              aria-describedby="basic-addon2"
+            />
           </div>
         </div>
-
+      </div>
+      <div className="d-flex justify-content-center pesquisa">
+        <button onClick={handleSearch} className="mx-2">Pesquisa Google</button>
+        <button className="mx-2">Estou com sorte</button>
       </div>
 
     </div>
+  </div>  
   )
 }
 
 export default SearchBar
 
 // em teste barra de pesquisas separada do App.js como um componente
+// <img src="{logo}" alt="logo"/>
