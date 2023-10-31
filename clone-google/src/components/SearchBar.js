@@ -15,12 +15,13 @@ function SearchBar () {
       <div className="container mt-4 h-100">
         <div className="row h-100 justify-content-center align-items-center">
           <div className="col-md-6">
+          <img src="{logo}" alt="logo"/>
             <div className="input-group">
               <input
                 type="text"
                 placeholder="Digite sua pesquisa...."
                 onChange={(e) => setQuery(e.target.value)}
-                className="form-control"
+                className="form-control rounded-pill"
                 aria-label="Pesquisar"
                 aria-describedby="basic-addon2"
               />
