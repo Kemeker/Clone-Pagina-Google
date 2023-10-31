@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import SearchBar from '../src/components/SearchBar'
-import './App.css'
+import Menu from '../src/components/Menu'
+import './style/App.css'
 
 function App(){
   const [query, setQuery] = useState('Digite algo no campo de pesquisa')
@@ -10,8 +11,10 @@ function App(){
     alert('Voce esta pesquisando:  ' + query)
   }
   return(
-    <SearchBar/>
-    
+    <>
+    <SearchBar/>,
+    <Menu/>
+    </>
   )
 }
 export default App

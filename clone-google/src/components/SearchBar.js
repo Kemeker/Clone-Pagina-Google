@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../src/assets/logo.png'
-import './SearchBar.css'
+import '../style/SearchBar.css'
 
 function SearchBar () {
   const [query, setQuery] = useState('Digite algo no campo')
