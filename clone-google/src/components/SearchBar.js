@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
-import logo from '../src/assets/logo.png'
+import logo from '../assets/logo.png'
 import '../style/SearchBar.css'
 
 function SearchBar () {
   const [query, setQuery] = useState('Digite algo no campo')
 
   const handleSearch = () => {
-    // implementar a logica 
-    alert('Voce esta procurando: ' + query)
+    // Ao clicar em pesquisar o botao  da pagina clone direciona para a pagina oficial do google
+    const url = "https://www.google.com.br"
+    
+    window.location.href = url
+    
   }
   return(
    
-    <div className="container">
+    <div className="container-fluid">
       <div className="container mt-4 h-100">
         <div className="row h-100 justify-content-center align-items-center">
           <div className="col-md-6">
+            <img src="{logo}" alt="logo"/>
           
             <div className="input-group">
               <input
