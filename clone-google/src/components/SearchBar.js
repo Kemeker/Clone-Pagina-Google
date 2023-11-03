@@ -5,13 +5,20 @@ import '../style/SearchBar.css'
 function SearchBar () {
   const [query, setQuery] = useState('Digite algo no campo')
 
-  const handleSearch = () => {
+  const PesquisaGoogle = () => {
     // Ao clicar em pesquisar o botao  da pagina clone direciona para a pagina oficial do google
     const url = "https://www.google.com.br"
-    
     window.location.href = url
-    
   }
+
+
+  const EstouComSorte = () => {
+    // ao clicar em estou com sorte direciona ao link do google estou com sorte
+    const url = "https://www.google.com/doodles"
+    window.location.href = url
+  }
+    
+  
   return(
    
     <div className="container-fluid">
@@ -32,8 +39,8 @@ function SearchBar () {
 
             </div>
             <div className="d-flex justify-content-center pesquisa">
-              <button onClick={handleSearch} className="mx-2">Pesquisa Google</button>
-              <button className="mx-2">Estou com sorte</button>
+              <button onClick={PesquisaGoogle} className="mx-2">Pesquisa Google</button>
+              <button  onClick={EstouComSorte} className="mx-2">Estou com sorte</button>
             </div>
 
           </div>
@@ -50,3 +57,5 @@ export default SearchBar
 
 // em teste barra de pesquisas separada do App.js como um componente
 // <img src="{logo}" alt="logo"/>
+
+// 
